@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuzakMaker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="menu">
+                <li class="brand">MuzakMaker</li>
+                <li><a href="#trending-songs">Trending Songs</a></li>
+                <li><a href="#your-playlists">Your Playlists</a></li>
+                <li><a href="#curated-playlists">Curated Playlists</a></li>
+            </ul>
+        </nav>
+        <h1>Smooth Jazz</h1>
+        <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
+    </header>
+
+    <main>
+        <section id="trending-songs">
+            <h2>Trending Songs</h2>
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/aloma-cover.png" alt="Aloma">
+                    <p>Aloma - Artist Cali</p>
+                    <audio controls src="audio/aloma.mp3"></audio>
+                </div>
+                <div class="slide">
+                    <img src="images/my-road-cover.png" alt="My Road">
+                    <p>My Road - Artist Nesterouk</p>
+                    <audio controls src="audio/my-road.mp3"></audio>
+                </div>
+                <div class="slide">
+                    <img src="images/papaya-cover.png" alt="Papaya">
+                    <p>Papaya - Artist Dredstudio</p>
+                    <audio controls src="audio/papaya.mp3"></audio>
+                </div>
+            </div>
+            <button class="more-btn">More trending</button>
+        </section>
+
+        <section id="your-playlists">
+            <h2>Your Playlists</h2>
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/best-of-2020-cover.png" alt="Best of 2020">
+                    <p>Best of 2020</p>
+                </div>
+                <div class="slide">
+                    <img src="images/pumpkin-spice-cover.png" alt="Pumpkin Spice">
+                    <p>Pumpkin Spice</p>
+                </div>
+                <div class="slide">
+                    <img src="images/quiet-storm-cover.png" alt="Quiet Storm">
+                    <p>Quiet Storm</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="curated-playlists">
+            <h2>Curated Playlists</h2>
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/boozy-brunch-cover.png" alt="Boozy Brunch">
+                    <p>Boozy Brunch</p>
+                </div>
+                <div class="slide">
+                    <img src="images/dinner-party-cover.png" alt="Dinner Party">
+                    <p>Dinner Party</p>
+                </div>
+                <div class="slide">
+                    <img src="images/mellow-cover.png" alt="Mellow">
+                    <p>Mellow</p>
+                </div>
+            </div>
+            <button class="more-btn">More curated</button>
+        </section>
+    </main>
+
+    <footer>
+        <button class="footer-btn">All your playlists</button>
+        <button class="footer-btn">More curated</button>
+        <p>&copy; 2022 Smooth Jazz</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* styles.css */
+
+/* Color Palette */
+:root {
+    --primary-color: #020659;
+    --secondary-color: #590242;
+    --hover-primary-color: #020659;
+    --hover-secondary-color: #590242;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --footer-text-color: #ffffff;
+    --button-color: #800080;
+    --button-hover-color: #ff69b4;
+}
+
+/* Mobile First Design */
+body {
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 1.25em;
+}
+
+header p {
+    font-size: 1em;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    margin: 0 1em;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+.brand {
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+
+@media (max-width: 375px) {
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--secondary-color);
+    }
+
+    .menu li {
+        margin: 1em 0;
+    }
+
+    #menu-toggle:checked + .menu {
+        display: flex;
+    }
+}
+
+main {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+
+h2 {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1em;
+}
+
+.slide {
+    min-width: 200px;
+    margin-right: 1em;
+    position: relative;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide p {
+    margin: 0.5em 0;
+}
+
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: var(--footer-text-color);
+}
+
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Buttons */
+.more-btn, .footer-btn {
+    background-color: var(--button-color);
+    color: var(--footer-text-color);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.more-btn:hover, .footer-btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Hover Effects */
+.menu li a:hover {
+    background-color: var(--hover-primary-color);
+}
+
+.slide:hover {
+    background-color: var(--hover-secondary-color);
+    color: var(--footer-text-color);
+}
